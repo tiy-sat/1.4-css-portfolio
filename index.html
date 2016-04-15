@@ -17,18 +17,16 @@
         </nav>
         <!-- This is for the nav bar at the beginning of the page  -->
         <nav class="navMenuBar">
-          <a href="#home"> Home </a>
-          <a href="#news"> News </a>
-          <a href="#about"> About </a>
-          <a href="#photos"> Photos </a>
+          <a class="navMenuBar__link" href="#home"> Home </a>
+          <a class="navMenuBar__link" href="#news"> News </a>
+          <a class="navMenuBar__link" href="#about"> About </a>
+          <a class="navMenuBar__link" href="#photos"> Photos </a>
         </nav>
       </header>
       <!-- carousel -->
       <main>
-        <ol>
-          <li class="image"><img src="coolthing.jpg" alt="the first image on the carousel"/></li>
-          <li class="image"><img src="coolerthing.jpg" alt="the second image on the carousel"/></li>
-          <li class="image"><img src="evencoolthing.jpg" alt="the third image on the carousel"/></li>
+        <ol class="carousel">
+          <!--li class="carousel__img"><img src="assets/top-image.png" alt="skateboard logo camera" /></li-->
         </ol>
         <!-- carousel links-->
 
@@ -45,22 +43,22 @@
 
           <article class="blog">
             <h2 class="blog__title"> Article title # 1 </h2>
-            <time class="blog__time"></time>
-            <p class="blog__preview"> First few lines of the article will show up here
+            <time class="blog__time"> 10/10/13 </time>
+            <p class="blog__preview"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <a class="blog__link" href="http://www.article1.com"> Read More </a>
           </article>
           <article class="blog">
             <h2 class="blog__title"> Article title # 2 </h2>
-            <time class="blog__time"></time>
-            <p class="blog__preview"> First few lines of the article will show up here
+            <time class="blog__time"> 3/10/13 </time>
+            <p class="blog__preview"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <a class="blog__link" href="http://www.article2.com"> Read More </a>
           </article>
           <article class="blog">
             <h2 class="blog__title"> Article title # 3 </h2>
-            <time class="blog__time"></time>
-            <p class="blog__preview"> First few lines of the article will show up here
+            <time class="blog__time"> 10/4/13 </time>
+            <p class="blog__preview"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <a class="blog__link" href="http://www.article3.com"> Read More </a>
           </article>
@@ -76,9 +74,9 @@
       </section>
       <!-- The images still need to have sizes and alignment added -->
           <!-- This is the contact us section at the bottom of the page -->
-          <footer>
-            <h2>Contact us for more information</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <footer class="pageEnd">
+            <h2 class="pageEnd__title">Contact us for more information</h2>
+            <p class="pageEnd__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <nav class="socialMediaLinks">
               <a href="#facebook"></a>
@@ -86,20 +84,11 @@
               <a href="#youtube"></a>
               <a href="#googlePlus"></a>
             </nav>
-            <!-- Found form info at http://www.w3schools.com/tags/tag_form.asp -->
+            <!-- contact us form -->
             <form action="contactForm" method="get">
-              <label>
-                Name:
-                <input type="text" name="name">
-              </label>
-              <label>
-                Email:
-                <input type="email" name="email">
-              </label>
-              <label>
-                Text:
-                <textarea type="textarea" name="text"></textarea>
-              </label>
+              <input type="text" name="name" placeholder="name">
+              <input type="email" name="email" placeholder="email">
+              <textarea type="textarea" name="text" placeholder="text"></textarea>
               <input type="submit" name="submit" value="SUBMIT">
             </form>
           </footer>
