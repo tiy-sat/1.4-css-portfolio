@@ -1,0 +1,11 @@
+
+.blog {
+  display: inline-block;
+  height: 350px;
+  width: 334px;
+  margin-right: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.blog:nth-child(3) {
+  margin-right: 0px;
+}
