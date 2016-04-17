@@ -1,0 +1,31 @@
+body {
+    background-image: url("assets/bg.jpg");
+}
+.social {
+    display: block;
+    width: 60;
+    height: 60;
+    padding-bottom: 0%;
+    border: 0px solid white;
+    text-align: right;
+    position: relative;
+    overflow: auto;
+}
+
+ .lxwrapper {
+    display: block;
+    width: 250;
+    height: 40;
+    margin-left: 4;
+    margin-top: 20;
+    margin-bottom: 21;
+}
+  .content {
+    overflow: auto;
+    height: 100%
+  }
+
+
+.discript {
+
+}
