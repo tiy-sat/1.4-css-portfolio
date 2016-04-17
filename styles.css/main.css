@@ -1,5 +1,5 @@
 body {
-    background-image: url("assets/bg.jpg");
+ background-image: url("assets/assetsbg.jpg);
 }
 
 .social {
@@ -13,19 +13,13 @@ body {
     overflow: auto;
 }
 
-* {
-    box-sizing: border-box;
-}
 
- li {
+ .main-nav a {
+  width: 250px;
+  height: 40px;
+  background-color: rgb(180,41,46) ;
   display: inline-block;
-  list-style: none;
-  padding: 5px 10px
-  background-color; grey;
-  text-align: center;
-  font-size: 1.3rem;
-  width: 80px;
-  border: 2px 
+
 }
 
 
