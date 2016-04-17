@@ -7,26 +7,33 @@
     </head>
 
   <body>
+    <div class="wrapper">
+
+
       <header>
-        <!-- social media links -->
-        <nav class="socialMediaLinks">
-          <a href="#facebook"></a>
-          <a href="#twitter"></a>
-          <a href="#youtube"></a>
-          <a href="#googlePlus"></a>
-        </nav>
-        <!-- This is for the nav bar at the beginning of the page  -->
-        <nav class="navMenuBar">
-          <a class="navMenuBar__link" href="#home"> Home </a>
-          <a class="navMenuBar__link" href="#news"> News </a>
-          <a class="navMenuBar__link" href="#about"> About </a>
-          <a class="navMenuBar__link" href="#photos"> Photos </a>
-        </nav>
+          <section class="topOfPage">
+
+
+          <!-- social media links -->
+          <nav class="socialMediaLinks">
+            <a href="#facebook"> <img src="assets/social_media_icons/facebook.png" alt="facebook"/></a>
+            <a href="#twitter"><img src="assets/social_media_icons/twitter.png" alt="twitter"/></a>
+            <a href="#rss"><img src="assets/social_media_icons/rss.png" alt="rss"/></a>
+            <a href="#youtube"><img src="assets/social_media_icons/youtube.png" alt="youtube"/></a>
+          </nav>
+          <!-- This is for the nav bar at the beginning of the page  -->
+          <nav class="navMenuBar">
+            <a class="navMenuBar__link border__bottom" href="#sk8 news"> sk8 News </a>
+            <a class="navMenuBar__link border__bottom" href="#skateboarders"> Skateboarders </a>
+            <a class="navMenuBar__link border__bottom" href="#boardDesign"> Board Design </a>
+            <a class="navMenuBar__link border__bottom" href="#contactUs"> Contact Us  </a>
+          </nav>
+        </section>
       </header>
       <!-- carousel -->
-      <main>
-        <ol class="carousel">
-          <!--li class="carousel__img"><img src="assets/top-image.png" alt="skateboard logo camera" /></li-->
+      <main class="carousel">
+        <ol>
+          <li><img src="assets/top-image.png" alt="skateboard logo camera"/></li>
         </ol>
         <!-- carousel links-->
 
@@ -38,8 +45,7 @@
         </main>
         <!-- end carousel-->
         <!--These are the 3 articles underneath the carousel -->
-        <section>
-
+        <section class="grid__row">
 
           <article class="blog">
             <h2 class="blog__title"> Article title # 1 </h2>
@@ -62,33 +68,67 @@
             </p>
             <a class="blog__link" href="http://www.article3.com"> Read More </a>
           </article>
+
+
         </section>
 
           <!-- This is where the image block begins -->
         <section class="imageSection">
-          <a href="#"><img src="octopus.jpg" alt="octopus"/></a>
-          <a href="#"><img src="cuttlefish.jpg" alt="cuttlefish"/></a>
-          <a href="#"><img src="squid.jpg" alt="squid"/></a>
-          <a href="#"><img src="nautilis.jpg" alt="nautilis"/></a>
-          <a href="#"><img src="ammonite.jpg" alt="ammonite"/></a>
+
+          <h3 class="imageSection__pointer"> Skateboarders </h3>
+<div class="imageSection_col">
+
+
+          <a href="#"><img class="imageSection__small" src="assets/sk8er-4.png" alt="Lance Mountain"/></a>
+
+
+
+          <a href="#"><img class="imageSection__small"src="assets/sk8er-3.png" alt="Rodney Mullen"/></a>
+
+          <a href="#"><img class="imageSection__medium" src="assets/sk8er-1.png" alt="Steve Caballero"/></a>
+
+          <a href="#"><img class="imageSection__tall"src="assets/sk8er-2.png" alt="Tommy Guerrero"/></a>
+</div>
+
+<div class="imageSection__sk8">
+    <a href="#"><img src="assets/sk8-10.png" alt="sk8-10" /></a>
+    <a href="#"><img src="assets/sk8-9.png" alt="sk8-9" /></a>
+    <a href="#"><img src="assets/sk8-8.png" alt="sk8-8" /></a>
+    <a href="#"><img src="assets/sk8-7.png" alt="sk8-7" /></a>
+    <a href="#"><img src="assets/sk8-6.png" alt="sk8-6" /></a>
+    <a href="#"><img src="assets/sk8-5.png" alt="sk8-5" /></a>
+    <a href="#"><img src="assets/sk8-4.png" alt="sk8-4" /></a>
+    <a href="#"><img src="assets/sk8-3.png" alt="sk8-3" /></a>
+    <a href="#"><img src="assets/sk8-2.png" alt="sk8-2" /></a>
+    <a href="#"><img src="assets/sk8-1.png" alt="sk8-1" /></a>
+</div>
+
       </section>
+
+
       <!-- The images still need to have sizes and alignment added -->
           <!-- This is the contact us section at the bottom of the page -->
           <footer class="pageEnd">
             <h2 class="pageEnd__title">Contact us for more information</h2>
             <p class="pageEnd__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <nav class="socialMediaLinks">
-              <a href="#facebook"></a>
-              <a href="#twitter"></a>
-              <a href="#youtube"></a>
-              <a href="#googlePlus"></a>
+            <nav class="pageEnd__graySocialMediaLinks">
+              <a href="#facebook"> <img src="assets/gray_social_media_icons/facebook_gray.png" alt="facebook"/></a>
+              <a href="#twitter"><img src="assets/gray_social_media_icons/twitter_gray.png" alt="twitter"/></a>
+              <a href="#rss"><img src="assets/gray_social_media_icons/rss_gray.png" alt="rss"/></a>
+              <a href="#youtube"><img src="assets/gray_social_media_icons/youtube_gray.png" alt="youtube"/></a>
             </nav>
             <!-- contact us form -->
-            <form action="contactForm" method="get">
-              <input type="text" name="name" placeholder="name">
-              <input type="email" name="email" placeholder="email">
-              <textarea type="textarea" name="text" placeholder="text"></textarea>
-              <input type="submit" name="submit" value="SUBMIT">
-            </form>
+            <div class="form__wrapper">
+
+                <form action="contactForm" method="get">
+                <input class="form__wrapper--inputs" type="text" name="name" placeholder="name">
+                <input class="form__wrapper--inputs" type="email" name="email" placeholder="email">
+                <textarea class="form__wrapper--inputs" type="textarea" name="text" placeholder="text"></textarea>
+                <input class="submit"type="submit" name="submit" value="SUBMIT">
+              </form>
+            </div>
           </footer>
+
+          </div>
+        </body>
