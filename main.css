@@ -1,6 +1,7 @@
 body {
     background-image: url("assets/bg.jpg");
 }
+
 .social {
     display: block;
     width: 60;
@@ -12,14 +13,22 @@ body {
     overflow: auto;
 }
 
- .lxwrapper {
-    display: block;
-    width: 250;
-    height: 40;
-    margin-left: 4;
-    margin-top: 20;
-    margin-bottom: 21;
+* {
+    box-sizing: border-box;
 }
+
+ li {
+  display: inline-block;
+  list-style: none;
+  padding: 5px 10px
+  background-color; grey;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 80px;
+  border: 2px 
+}
+
+
   .content {
     overflow: auto;
     height: 100%
