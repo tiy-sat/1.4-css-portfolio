@@ -1,0 +1,501 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* referenced rem sizing here http://snook.ca/archives/html_and_css/font-size-with-rem */
+  font-size: 62.5%;
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+body {
+  font-family: sans-serif;
+  font-size: 14px; font-size: 1.4rem; /* =14px */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 1rem;
+}
+.wrapper {
+    width: 1024px;
+    /*display: inline-block;*/
+    position: relative;
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    top: 1rem;
+}
+.link__subscribe {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 200;
+  float: right;
+  margin-right: 8rem;
+  margin-top: 2.5rem;
+}
+.link__subscribe:after {
+  /* This is where I pulled special character from: https://brajeshwar.github.io/entities/ */
+  content:"\2022";
+  display: inline-block;
+  font-size: 10px;
+  font-size: 1rem; /* =10px */
+  padding-left: 1rem;
+}
+
+.nav__social {
+  /*border-left: 5px dotted rgb(255, 255, 255);*/
+  position: relative;
+  /*border-radius: 50px;*/
+  float: right;
+}
+.nav__social img{
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bottom__border{
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+}
+.bottom__border--horiz{
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 0;
+  height: 232px;
+}
+.bottom__border--main{
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  box-sizing: content-box;
+}
+.nav__social:before {
+ content:"•••••";
+ font-size: 15px;
+ font-size: 1.5rem;
+ color: rgb(255, 255, 255);
+ transform: rotate(90deg);
+ display: inline-block;
+ letter-spacing: .25rem;
+ vertical-align: top;
+ padding-bottom: 4rem;
+ padding-left: 2rem;
+}
+
+.carousel {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 360px;
+  background-color: blue;
+  /*justify-content: center;*/
+  overflow: hidden;
+  border: 8px solid rgb(255, 255, 255);
+}
+.carousel ol li img:first-child{
+  position: absolute;
+  left: -15%;
+  top: -35%;
+}
+.carousel ol li img:nth-child(2){
+  /*display: none;*/
+  opacity: 0.5;
+  position: absolute;
+  top: -10%;
+}
+.carousel ol li img:last-child{
+  /*z-index: 1;*/
+  position: absolute;
+  left: 2%;
+  top: 15%;
+}
+.carousel__markers {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: .5rem;
+  margin-bottom: 2rem;
+}
+.carousel__marker {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  /*border: 3px solid rgb(255, 255, 255);*/
+  border-radius: 10px;
+  z-index: 2;
+  /*margin-left: 5px;*/
+}
+.carousel__marker--Selected {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(180, 41, 46);
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  z-index: 2;
+}
+.bottom__border--marker{
+  /*border-bottom: 4px solid rgba(255, 255, 255, 0.5);*/
+  /*border-radius: 5px;*/
+  display: inline-block;
+  margin-left: 5px;
+}
+
+main{
+  margin-bottom: 1rem;
+}
+
+li{
+  list-style-type: none;
+  display: inline-block;
+}
+.nav__main{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.5rem;
+}
+.nav__main a {
+  width: 250px;
+  height: 40px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(180, 41, 46);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1rem;
+  font-size: 1.75rem;
+}
+.nav__main a:after {
+  content: "\2014";
+  padding-left: 1.5rem;
+}
+
+.nav__main a:before {
+  content: "\2014";
+  padding-right: 1.5rem;
+}
+.nav__main li{
+  margin-right: 4px;
+}
+.nav__main li:last-child {
+  margin-right: 0px;
+}
+
+.headshots {
+  position: relative;
+  bottom: 3rem;
+}
+/*.headshots li {
+  position: relative;
+  display: inline-block;
+}*/
+.headshots__link--square {
+  width: 334px;
+  height: 232px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid rgb(255, 255, 255);
+}
+.headshots__li--square {
+  margin-right: 7px;
+}
+.headshots a{
+  position: relative;
+  display: inline-block;
+}
+.headshots__link--square__mountain img {
+  position: absolute;
+  left: -35%;
+}
+.headshots__link--vertical {
+  width: 334px;
+  height: 472px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid rgb(255, 255, 255);
+}
+.headshots__link--vertical img {
+  position: absolute;
+  right: -35%;
+  /*top: 1%;*/
+}
+.headshots__link--horiz {
+  width: 680px;
+  height: 228px;
+  overflow: hidden;
+  display: inline-block;
+  border: 5px solid rgb(255, 255, 255);
+  margin: 0;
+}
+.headshots__li--horiz{
+  float: left;
+  margin-top: -232px;
+}
+.headshots__link--horiz img {
+  position: absolute;
+  top: -45%;
+  margin: 0;
+}
+.headshots__title--square {
+  text-decoration: none;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  text-align: center;
+  top: 25%;
+  left: 0%;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.headshots__title--vertical {
+  text-decoration: none;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  text-align: center;
+  top: 40%;
+  left: 0%;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.headshots__title--horiz {
+  text-decoration: none;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  text-align: center;
+  top: 35%;
+  left: 20%;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.article {
+  position: relative;
+  display: inline-block;
+  width: 334px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  vertical-align: top;
+  margin: 0;
+}
+.article:last-child {
+  margin: 0;
+}
+.article__title {
+  text-transform: capitalize;
+  color: rgb(100, 100, 100);
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.article__date{
+  text-transform: capitalize;
+  color: rgb(200, 200, 200);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.article__body {
+  font-size: 1.275rem;
+  color: rgb(20, 20, 20);
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.articles {
+  margin-bottom: 6rem;
+}
+
+.bottom__border--article {
+  margin-right: 7px;
+}
+
+.article__link {
+  text-transform: uppercase;
+  color: rgb(180, 41, 46);
+  font-weight: 900;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.article__link:before {
+  content:"[";
+  padding-right: 0.25rem;
+}
+
+.article__link:after {
+  content:"]";
+  padding-left: 0.25rem;
+}
+.boards {
+  display: inline-block;
+  width: 1024px;
+  height: 294px;
+  /*border-bottom: 4px solid rgba(255, 255, 255, 0.5);*/
+  /*border: 1px solid white;*/
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+}
+.board__list--each {
+  margin-left: 16px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+.board__list li:first-child {
+  /*display: none;*/
+  margin-left: 35px;
+}
+.board__list {
+  margin-top: 12px;
+  display: inline-block;
+  width: 1024px;
+  height: 286px;
+  /*background-color: rgb(255, 255, 255);*/
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+}
+footer{
+  width: 1024px;
+  height: 358px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+  /*border: 1px solid white;*/
+}
+.bottom__border--footer {
+  /*width: 1024px;*/
+  height: 362px;
+  display: block;
+  position: relative;
+  padding: 32px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact__title {
+  text-transform: capitalize;
+  color: rgb(100, 100, 100);
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.contact__body {
+  font-size: 1.275rem;
+  color: rgb(20, 20, 20);
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  width: 480px;
+}
+.nav__social--gray img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.contact__form {
+  float: right;
+  width: 435px;
+  height: 300px;
+}
+.contact__form--input {
+  width: 435px;
+  height: 43px;
+  border: 1px solid rgb(160, 160, 160);
+  margin-bottom: 18px;
+  border-top: 4px solid rgb(160, 160, 160);
+  border-left: 4px solid rgb(160, 160, 160);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.contact__form--text{
+  width: 435px;
+  height: 108px;
+  border: 1px solid rgb(160, 160, 160);
+  margin-bottom: 29px;
+  border-top: 4px solid rgb(160, 160, 160);
+  border-left: 4px solid rgb(160, 160, 160);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.contact__form--submit {
+  width: 250px;
+  height: 40px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgb(180, 41, 46);
+  font-size: 1.5rem;
+  border: none;
+  float: right;
+}
+.headshots__snipe--square {
+  width: 240px;
+  height: 100px;
+  background-color: rgb(180, 41, 46);
+  display: inline-block;
+  float: right;
+  position: absolute;
+  left: -240px;
+}
+.headshots__snipe--square p {
+  text-align: right;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  padding-top: 4rem;
+  font-weight: 900;
+}
+.headshots__snipe--triangle {
+  width: 100px;
+  height: 0px;
+  border-left: 30px solid rgb(180, 41, 46);
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  float: right;
+  position: absolute;
+
+}
+.headshots__snipe {
+  position: absolute;
+  left: -40px;
+}
+.headshots__snipe--squareBorder {
+  width: 240px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  float: right;
+  position: absolute;
+  left: -240px;
+}
+.headshots__snipe--triangleBorder {
+  width: 100px;
+  height: 0px;
+  border-left: 30px solid rgba(255, 255, 255, 0.5);
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  float: right;
+  position: absolute;
+
+}
+.headshots__snipe--border {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+}
