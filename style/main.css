@@ -80,7 +80,7 @@ body {
   width: 1024px;
   height: 330px;
   border-bottom: 3px solid rgba(127, 140, 141,1.0);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
 }
 .carousel li {
@@ -89,14 +89,37 @@ body {
   box-sizing: border-box;
   border: solid 10px rgb(255, 255, 255);
   overflow: hidden;
+  position: relative;
+  z-index: -1;
 }
 
 .carousel img {
   margin: 0px;
   box-sizing: border-box;
-  width: 100%;
   height: auto;
   }
+.carousel__base {
+ position: absolute;
+ left: 0px;
+ top: -100px;
+ width: 125%;
+ z-index: 2;
+}
+.carousel__grid {
+position: absolute;
+left: 0px;
+top: 0px;
+height: 200%;
+z-index: 30;
+opacity: 0.35;
+}
+.carousel__logo{
+position: absolute;
+width: 40%;
+left: 0px;
+top: 40px;
+z-index: 40;
+}
 
 .grid__row {
   font-size: 0;
@@ -104,18 +127,17 @@ body {
 
 .carousel__indicator {
   display: block;
-  height: 40px;
+  height: 20px;
   width: auto;
   margin-top: 20px
-  margin-bottom:5px;
-
+  margin-bottom:-5px;
   text-align: center;
 }
 .carousel__indicator--dot {
-  height: 10px;
-  width: 10x;
-  border-radius: 10px;
-  border: 10px solid rgb(255, 255, 255);
+  height: 9px;
+  width: 9x;
+  border-radius: 9px;
+  border: 9px solid rgb(255, 255, 255);
   margin-right: 12px;
 
 }
