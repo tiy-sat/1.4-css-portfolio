@@ -1,6 +1,9 @@
    body {
     background-image: url("../assets/bg.jpg");
-}
+    padding: 0;
+
+  }
+
 
 .social {
     display: block;
@@ -12,20 +15,34 @@
     position: relative;
     overflow: auto;
 }
+.wrapper  {
+
+  vertical-align: top;
+  width: 1024px
+  margin: 0 auto;
 
 
- .main-nav a {
-  width: 250px;
+
+  }
+
+
+.main-nav a {
+  width: 220px;
   height: 40px;
-  background-color: rgb(180,41,46) ;
+  vertical-align: top;
+  background-color: rgb(180,41,46);
   display: inline-block;
+  text-align:center;
+  padding-top: 7px;
+  padding-bottom: 2px;
+  color: #ffffff;
 
-}
+  }
 
 
   .content {
     overflow: auto;
-    height: 100%
+
   }
 
 
