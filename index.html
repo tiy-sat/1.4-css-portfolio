@@ -11,34 +11,42 @@
 
 
       <header>
-          <section class="topOfPage">
-
+          <section class="top-of-page">
 
           <!-- social media links -->
-          <nav class="socialMediaLinks">
-            <a href="#facebook"> <img src="assets/social_media_icons/facebook.png" alt="facebook"/></a>
-            <a href="#twitter"><img src="assets/social_media_icons/twitter.png" alt="twitter"/></a>
-            <a href="#rss"><img src="assets/social_media_icons/rss.png" alt="rss"/></a>
-            <a href="#youtube"><img src="assets/social_media_icons/youtube.png" alt="youtube"/></a>
+          <nav class="social-media-links">
+            <a class="social-media-links__square" href="#facebook"> <img src="assets/social_media_icons/facebook.png" alt="facebook"/></a>
+            <a class="social-media-links__square" href="#twitter"><img src="assets/social_media_icons/twitter.png" alt="twitter"/></a>
+            <a class="social-media-links__square" href="#rss"><img src="assets/social_media_icons/rss.png" alt="rss"/></a>
+            <a class="social-media-links__square" href="#youtube"><img src="assets/social_media_icons/youtube.png" alt="youtube"/></a>
           </nav>
           <!-- This is for the nav bar at the beginning of the page  -->
-          <nav class="navMenuBar">
-            <a class="navMenuBar__link border__bottom" href="#sk8 news"> sk8 News </a>
-            <a class="navMenuBar__link border__bottom" href="#skateboarders"> Skateboarders </a>
-            <a class="navMenuBar__link border__bottom" href="#boardDesign"> Board Design </a>
-            <a class="navMenuBar__link border__bottom" href="#contactUs"> Contact Us  </a>
+          <nav class="navMenuBar grid__row">
+            <div class="grid__col--3">
+              <a class="nav-menu-bar__link border__bottom" href="#sk8 news"> sk8 News </a>
+            </div>
+            <div class="grid__col--3">
+              <a class="nav-menu-bar__link border__bottom" href="#skateboarders"> Skateboarders </a>
+            </div>
+            <div class="grid__col--3">
+              <a class="nav-menu-bar__link border__bottom" href="#boardDesign"> Board Design </a>
+            </div>
+            <div class="grid__col--3">
+              <a class="nav-menu-bar__link border__bottom" href="#contactUs"> Contact Us  </a>
+            </div>
           </nav>
         </section>
       </header>
       <!-- carousel -->
-      <main class="carousel">
-        <ol>
-          <li><img class="carousel__base "src="assets/top-image.png" alt="camera"/>
-          <img class="carousel__grid"src="assets/grid.png" alt="grid"/>
-          <img class="carousel__logo"src="assets/peralta-logo.png" alt="skateboard logo"/></li>
+      <main class="carousel" "grid__col--12">
+        <ol class="carousel__list">
+          <li class="carousel__list--item">
+            <img class="carousel__base "src="assets/top-image.png" alt="camera"/>
+            <img class="carousel__grid"src="assets/grid.png" alt="grid"/>
+            <img class="carousel__logo"src="assets/peralta-logo.png" alt="skateboard logo"/>
+          </li>
         </ol>
         <!-- carousel links-->
-
           <nav class="carousel__indicator">
             <a class="carousel__indicator--dot" href="#"></a>
             <a class="carousel__indicator--dot" href="#"></a>
@@ -47,106 +55,85 @@
         </main>
         <!-- end carousel-->
         <!--These are the 3 articles underneath the carousel -->
-        <section class="grid__row">
-
-          <article class="blog">
+        <section class="blog__wrapper grid__row">
+          <article class="grid__col--4 blog">
             <h2 class="blog__title"> Article title # 1 </h2>
             <time class="blog__time"> 10/10/13 </time>
             <p class="blog__preview"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <a class="blog__link" href="http://www.article1.com"> Read More </a>
           </article>
-          <article class="blog">
+          <article class="grid__col--4 blog">
             <h2 class="blog__title"> Article title # 2 </h2>
             <time class="blog__time"> 3/10/13 </time>
             <p class="blog__preview"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <a class="blog__link" href="http://www.article2.com"> Read More </a>
           </article>
-          <article class="blog">
+          <article class="grid__col--4 blog">
             <h2 class="blog__title"> Article title # 3 </h2>
             <time class="blog__time"> 10/4/13 </time>
             <p class="blog__preview"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <a class="blog__link" href="http://www.article3.com"> Read More </a>
           </article>
-
-
         </section>
 
           <!-- This is where the image block begins -->
-        <section class="imageSection">
-
-
-
-        <div class="imageSection_col ">
-
-
-              <a class="imageSection__small" href="#">
-                  <img class ="imageSection__small--img1" src="assets/sk8er-4.png" alt="Lance Mountain"/>
-                  <h4 class="imageSection__text"> Lance Mountain </h4>
-              </a>
-
-
-
-              <a class="imageSection__small " href="#"><img class="imageSection__small--img2" src="assets/sk8er-3.png" alt="Rodney Mullen"/>
-              <h4 class="imageSection__text"> Rodney Mullen </h4> </a>
-
-              <a class="imageSection__medium" href="#"><img  src="assets/sk8er-1.png" alt="Steve Caballero"/>
-                <h4 class="imageSection__text"> Steve Caballero </h4>
-              </a>
-
-              <a class="imageSection__tall" href="#"><img src="assets/sk8er-2.png" alt="Tommy Guerrero"/>
-              <h4 class="imageSection__text"> Tommy Guerrero </h4></a>
-        </div>
+        <section class="image-section">
+              <a class="image-section__small grid__col--4" href="#">
+                <img class ="image-section__small--img1" src="assets/sk8er-4.png" alt="Lance Mountain"/>
+              <h4 class="image-section__text"> Lance Mountain </h4>
+            </a>
+            <a class="image-section__small grid__col--4" href="#"><img class="image-section__small--img2" src="assets/sk8er-3.png" alt="Rodney Mullen"/>
+              <h4 class="image-section__text"> Rodney Mullen </h4> </a>
+            <a class="image-section__medium" href="#"><img class="image-section__medium--img1" src="assets/sk8er-1.png" alt="Steve Caballero"/>
+              <h4 class="image-section__text"> Steve Caballero </h4>
+            </a>
+            <a class="image-section__tall" href="#"><img class="image-section__tall--img1" src="assets/sk8er-2.png" alt="Tommy Guerrero"/>
+              <h4 class="image-section__text"> Tommy Guerrero </h4></a>
+            </section>
         <div class="pointer__wrapper">
 
-        <h3 class="imageSection__pointer triangle"><i></i> Skateboarders </h3>
+        <h3 class="image-section__pointer triangle"><i></i> Skateboarders </h3>
         </div>
 
-    <section class="imageSection__sk8 border__bottom">
-        <a href="#"><img src="assets/sk8-10.png" alt="sk8-10" /></a>
-        <a href="#"><img src="assets/sk8-9.png" alt="sk8-9" /></a>
-        <a href="#"><img src="assets/sk8-8.png" alt="sk8-8" /></a>
-        <a href="#"><img src="assets/sk8-7.png" alt="sk8-7" /></a>
-        <a href="#"><img src="assets/sk8-6.png" alt="sk8-6" /></a>
-        <a href="#"><img src="assets/sk8-5.png" alt="sk8-5" /></a>
-        <a href="#"><img src="assets/sk8-4.png" alt="sk8-4" /></a>
-        <a href="#"><img src="assets/sk8-3.png" alt="sk8-3" /></a>
-        <a href="#"><img src="assets/sk8-2.png" alt="sk8-2" /></a>
-        <a href="#"><img src="assets/sk8-1.png" alt="sk8-1" /></a>
-    </section>
-
+      <section class="image-section__sk8">
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-10.png" alt="sk8-10" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-9.png" alt="sk8-9" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-8.png" alt="sk8-8" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-7.png" alt="sk8-7" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-6.png" alt="sk8-6" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-5.png" alt="sk8-5" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-4.png" alt="sk8-4" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-3.png" alt="sk8-3" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-2.png" alt="sk8-2" /></a>
+          <a class="image-section__sk8--board" href="#"><img src="assets/sk8-1.png" alt="sk8-1" /></a>
       </section>
-
-
-      <!-- The images still need to have sizes and alignment added -->
           <!-- This is the contact us section at the bottom of the page -->
-            <footer class="pageEnd">
-              <section class="pageEnd__wrapper">
+    <footer class="page-end">
+      <section class="grid__col--6">
+        <h2 class="page-end__title">Contact us for more information</h2>
+        <p class="page-end__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <nav class="page-end__graySocialMediaLinks">
+          <a class="page-end__graySocialMediaLinks--square" href="#facebook"> <img src="assets/gray_social_media_icons/facebook_gray.png" alt="facebook"/></a>
+          <a class="page-end__graySocialMediaLinks--square" href="#twitter"><img src="assets/gray_social_media_icons/twitter_gray.png" alt="twitter"/></a>
+          <a class="page-end__graySocialMediaLinks--square" href="#rss"><img src="assets/gray_social_media_icons/rss_gray.png" alt="rss"/></a>
+          <a class="page-end__graySocialMediaLinks--square" href="#youtube"><img src="assets/gray_social_media_icons/youtube_gray.png" alt="youtube"/></a>
+        </nav>
+      </section>
+      <!-- contact us form -->
+      <div class="form__wrapper">
 
+          <form action="contactForm" method="get">
+          <input class="form__wrapper--inputs" type="text" name="name" placeholder="NAME">
+          <input class="form__wrapper--inputs" type="email" name="email" placeholder="EMAIL">
+          <textarea class="form__wrapper--inputs" type="textarea" name="text" placeholder="YOUR MESSAGE"></textarea>
+          <input class="submit"type="submit" name="submit" value="SUBMIT">
+        </form>
+      </div>
+    </footer>
 
-                <h2 class="pageEnd__title">Contact us for more information</h2>
-                <p class="pageEnd__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <nav class="pageEnd__graySocialMediaLinks">
-                  <a href="#facebook"> <img src="assets/gray_social_media_icons/facebook_gray.png" alt="facebook"/></a>
-                  <a href="#twitter"><img src="assets/gray_social_media_icons/twitter_gray.png" alt="twitter"/></a>
-                  <a href="#rss"><img src="assets/gray_social_media_icons/rss_gray.png" alt="rss"/></a>
-                  <a href="#youtube"><img src="assets/gray_social_media_icons/youtube_gray.png" alt="youtube"/></a>
-                </nav>
-              </section>
-              <!-- contact us form -->
-              <div class="form__wrapper">
-
-                  <form action="contactForm" method="get">
-                  <input class="form__wrapper--inputs" type="text" name="name" placeholder="name">
-                  <input class="form__wrapper--inputs" type="email" name="email" placeholder="email">
-                  <textarea class="form__wrapper--inputs" type="textarea" name="text" placeholder="your message"></textarea>
-                  <input class="submit"type="submit" name="submit" value="SUBMIT">
-                </form>
-              </div>
-            </footer>
-
-          </div>
-        </body>
+    </div>
+  </body>
