@@ -5,9 +5,16 @@
   @include padding-horizontal($grid__gutter--width)
   display: inline-block
   font-size: $font-size--base
+  vertical-align: top
 
 $number-of-columns:12
 
 @for $i from 1 through $number-of-columns
   .grid__col--#{$i}
     width: (100% / $number-of-columns) * $i
+
+.grid__col--bleedleft
+  padding-left: 0
+
+.grid__col--bleedright
+  padding-right: 0
